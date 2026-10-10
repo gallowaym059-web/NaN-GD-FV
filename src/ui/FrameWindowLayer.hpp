@@ -5,7 +5,7 @@
 #include <Geode/ui/TextInput.hpp>
 #include <Geode/ui/ScrollLayer.hpp>
 
-class FrameWindowLayer : public geode::Popup<> {
+class FrameWindowLayer : public geode::Popup {
 public:
     static FrameWindowLayer* create();
 
