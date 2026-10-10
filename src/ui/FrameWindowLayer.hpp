@@ -5,7 +5,7 @@
 #include <Geode/ui/TextInput.hpp>
 #include <Geode/ui/ScrollLayer.hpp>
 
-class FrameWindowLayer : public geode::Popup {
+class FrameWindowLayer : public geode::Popup<> {
 public:
     static FrameWindowLayer* create();
 
@@ -26,8 +26,8 @@ protected:
     void onDelete(cocos2d::CCObject* sender);
 
     cocos2d::CCLabelBMFont* m_status = nullptr;
-    cocos2d::ButtonSprite* m_recordSpr = nullptr;
-    cocos2d::ButtonSprite* m_playSpr = nullptr;
+    ButtonSprite* m_recordSpr = nullptr;
+    ButtonSprite* m_playSpr = nullptr;
     geode::ScrollLayer* m_list = nullptr;
     geode::TextInput* m_input = nullptr;
 };
