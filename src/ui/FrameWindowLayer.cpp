@@ -38,7 +38,7 @@ bool FrameWindowLayer::init() {
     menu->setPosition({ 0.f, 0.f });
     m_mainLayer->addChild(menu);
 
-    auto addTextButton = [&](const char* text, cocos2d::SEL_MenuHandler cb, float x, float y) -> cocos2d::ButtonSprite* {
+    auto addTextButton = [&](const char* text, cocos2d::SEL_MenuHandler cb, float x, float y) -> ButtonSprite* {
         auto spr = ButtonSprite::create(text);
         spr->setScale(0.58f);
         auto item = CCMenuItemSpriteExtra::create(spr, this, cb);
