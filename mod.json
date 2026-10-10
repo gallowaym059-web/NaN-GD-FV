@@ -1,0 +1,50 @@
+{
+	"geode": ">=5.0.0",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "bedrock.frame-window-visualizer",
+	"name": "Frame Window Visualizer",
+	"version": "v0.1.0",
+	"developer": "bedrock",
+	"description": "Record, analyze and replay inputs as labeled frame-window markers with a live HUD.",
+	"tags": [
+		"utility",
+		"customization",
+		"gameplay"
+	],
+	"links": {
+		"source": "https://github.com/your-name/frame-window-visualizer"
+	},
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"default": true,
+			"name": "Enabled",
+			"description": "Master toggle for the frame window visualizer."
+		},
+		"show-hud": {
+			"type": "bool",
+			"default": true,
+			"name": "Show HUD",
+			"description": "Draw the live frame / hit counter overlay during gameplay."
+		},
+		"show-markers": {
+			"type": "bool",
+			"default": true,
+			"name": "Show Markers",
+			"description": "Spawn a colored marker on the player for every active frame window."
+		},
+		"marker-size": {
+			"type": "float",
+			"default": 1.0,
+			"min": 0.2,
+			"max": 3.0,
+			"name": "Marker Size",
+			"description": "Scale multiplier for spawned markers."
+		}
+	}
+}
